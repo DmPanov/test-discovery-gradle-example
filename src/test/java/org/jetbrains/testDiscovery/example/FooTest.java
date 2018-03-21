@@ -7,10 +7,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
 
-public class AppTest {
+public class FooTest {
     @Test
-    public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    public void testFooGreeting() {
+        assertNotNull("Foo should have a greeting", new Foo().getGreeting());
     }
 }
