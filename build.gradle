@@ -19,7 +19,7 @@ plugins {
 apply plugin: 'org.jetbrains.testDiscovery'
 
 testDiscovery {
-    upload = false
+    url = 'http://TODO'
 }
 
 dependencies {
