@@ -4,24 +4,12 @@ package org.jetbrains.testDiscovery.example;
  */
 
 import org.junit.Test;
-import org.junit.experimental.runners.Enclosed;
-import org.junit.runner.RunWith;
 
 import static org.junit.Assert.assertNotNull;
 
-@RunWith(Enclosed.class)
 public class FooTest {
-    public static class NestedFooTest {
-        @Test
-        public void testNestedFooGreeting() {
-            assertNotNull("Foo should have a greeting", new Foo().getGreeting());
-        }
-    }
-
-    public static class AnotherNestedFooTest {
-        @Test
-        public void testAnotherNestedFooGreeting() {
-            assertNotNull("Foo should have a greeting", new Foo().getGreeting());
-        }
+    @Test
+    public void testFooGreeting() {
+        assertNotNull("Foo should have a greeting", new Foo().getGreeting());
     }
 }

@@ -9,4 +9,9 @@ public class BarTest {
     public void testBarGreeting() {
         assertNotNull("Bar should have a greeting", new Bar().getGreeting());
     }
+
+    @Test
+    public void testBarSomething() {
+        assertNotNull("Bar should have a greeting", new Bar().getSomething());
+    }
 }
